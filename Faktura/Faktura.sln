@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faktura", "Faktura.csproj", "{60C3DF95-77AB-4CE8-925D-3BA085678A14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakturaUT", "..\FakturaUT\FakturaUT.csproj", "{FEB86351-7794-4B93-9BA9-E39468498CA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60C3DF95-77AB-4CE8-925D-3BA085678A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C3DF95-77AB-4CE8-925D-3BA085678A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C3DF95-77AB-4CE8-925D-3BA085678A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C3DF95-77AB-4CE8-925D-3BA085678A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB86351-7794-4B93-9BA9-E39468498CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB86351-7794-4B93-9BA9-E39468498CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB86351-7794-4B93-9BA9-E39468498CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB86351-7794-4B93-9BA9-E39468498CA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0E81F73-E4B4-4505-9B89-E3566C44B41E}
+	EndGlobalSection
+EndGlobal
