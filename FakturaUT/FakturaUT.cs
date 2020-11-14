@@ -107,7 +107,6 @@ namespace FakturaUT
         [TestMethod]
         public void ProductsTest2()
         {
-
             Product p1 = new Product("Orzechy laskowe", 44.90, 0.08);
             Product p2 = new Product("Telewizor X", 7299.90, 0.23);
 
@@ -118,7 +117,6 @@ namespace FakturaUT
 
             Assert.AreEqual(p1, products.avProducts[9]);
             Assert.AreEqual(p2, products.avProducts[10]);
-
         }
         [TestMethod]
         public void CartTest1()
@@ -132,7 +130,6 @@ namespace FakturaUT
             client.shopCar.AddToCart(products.GetProduct(1));
 
             Assert.AreEqual(client.shopCar.shoppingCart.Count, 2);
-
         }
 
         [TestMethod]
@@ -144,13 +141,10 @@ namespace FakturaUT
             client.shopCar.AddToCart(products.GetProduct(1));
             client.shopCar.AddToCart(products.GetProduct(3));
             client.shopCar.AddToCart(products.GetProduct(1));
-
             Assert.AreEqual(client.shopCar.shoppingCart.Count, 2);
 
             client.shopCar.RemoveFromCart(products.GetProduct(1));
-
             Assert.AreEqual(client.shopCar.shoppingCart.Count, 1);
-
         }
 
         [TestMethod]

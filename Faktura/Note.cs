@@ -18,8 +18,6 @@ namespace Faktura
             noteID = generateNoteID();
             Console.WriteLine("FV");
             totalAmount();
-            Console.WriteLine();
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
             Console.WriteLine("| Product name    | Quantity   | Netto unit price  | Netto sum  |  VAT  | Brutto sum price |");
             Console.WriteLine("--------------------------------------------------------------------------------------------");
             foreach (var item in noteClient.shopCar.shoppingCart)
@@ -28,18 +26,16 @@ namespace Faktura
                     item.productName, item.qunatity, item.nettoUnitPrice, Math.Round(item.qunatity * item.nettoUnitPrice, 2),
                     item.taxVat, Math.Round(item.bruttoUnitPrice * item.qunatity, 2)));
             }
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
             Console.WriteLine("----------------------------------------------------------------------------| TOTAL AMOUNT |");
             Console.WriteLine(String.Format("| {0, 88} |", Math.Round(total,2)));
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
-            Console.WriteLine("| CLIENT |----------------------------------------------------------------------------------");
+            Console.WriteLine("| CLIENT |");
             disClient();
-            Console.WriteLine("| SELLER |----------------------------------------------------------------------------------");
+            Console.WriteLine("| SELLER |");
             disSeller();
-            Console.WriteLine("ID: " + noteID );
-            Console.WriteLine("Document issue: " + docTime.ToString("dd/MM/yyyy"));
-            Console.WriteLine("Sale date: " + soldTime.Date.ToString("dd/MM/yyyy"));
-            Console.WriteLine("Paymanet day: " + butTime.Date.ToString("dd/MM/yyyy"));
+            Console.WriteLine("| ID | " +  String.Format("{0, 10}", noteID ));
+            Console.WriteLine("| Document issue | " + docTime.ToString("dd/MM/yyyy"));
+            Console.WriteLine("| Sale date | " + soldTime.Date.ToString("dd/MM/yyyy"));
+            Console.WriteLine("| Paymanet day | " + butTime.Date.ToString("dd/MM/yyyy"));
 
             Console.WriteLine();
         }
@@ -70,6 +66,7 @@ namespace Faktura
             string month = DateTime.Now.Month.ToString();
             string year = DateTime.Now.Year.ToString();
             string index = noteClient.noteIndex.ToString();
+            noteClient.noteIndex++;
             return "FV/" + year + "/" + month + "/" + index;
         }
 

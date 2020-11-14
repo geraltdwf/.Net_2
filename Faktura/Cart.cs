@@ -13,6 +13,7 @@ namespace Faktura
         {
 
         }
+        
 
         public void AddToCart(Product newProduct)
         {

@@ -20,6 +20,15 @@ namespace Faktura
             client.shopCar.AddToCart(avaliableProducts.GetProduct(232));
             client.shopCar.Display();
 
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+
             Note note = new Note(client, seller);
             note.Display();
             
